@@ -1,4 +1,4 @@
-package vip.epss.util;
+package vip.epss.utils;
 
 import java.sql.*;
 
@@ -11,7 +11,7 @@ public class DButil {
         }
     }
     public  static Connection getConn(){
-        String url="jdbc:mysql://localhost:3310/ele_se?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true";
+        String url="jdbc:mysql://localhost:3310/llg?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true";
         String user="root";
         String password="111111";
         Connection conn = null;

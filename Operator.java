@@ -1,5 +1,5 @@
-import vip.epss.util.DButil;
 
+import vip.epss.utils.DButil;
 import java.sql.*;
 
 public class Operator {
@@ -14,6 +14,7 @@ class Operatoradmin{
     private PreparedStatement ps=null;
 
     public  Operatoradmin() throws SQLException{
+
         conn = DButil.getConn();
         stat = conn.createStatement();
     }
