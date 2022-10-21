@@ -14,7 +14,6 @@ class Operatoradmin{
     private PreparedStatement ps=null;
 
     public  Operatoradmin() throws SQLException{
-
         conn = DButil.getConn();
         stat = conn.createStatement();
     }

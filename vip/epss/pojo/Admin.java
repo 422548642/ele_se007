@@ -1,7 +1,7 @@
 package vip.epss.pojo;
 
 import java.io.Serializable;
-import java.security.Timestamp;
+import java.sql.Timestamp;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +19,29 @@ private Timestamp uptime;
     public Admin(String adminname, String password) {
         this.adminname = adminname;
         this.password = password;
+    }
+
+    public Admin(Integer id, String adminname, String password, Timestamp uptime) {
+        this.id = id;
+        this.adminname = adminname;
+        this.password = password;
+        this.uptime = uptime;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Timestamp getUptime() {
+        return uptime;
+    }
+
+    public void setUptime(Timestamp uptime) {
+        this.uptime = uptime;
     }
 
     public String getAdminname() {
